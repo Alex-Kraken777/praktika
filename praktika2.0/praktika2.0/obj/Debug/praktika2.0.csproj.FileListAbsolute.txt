@@ -1,0 +1,10 @@
+C:\Users\alex-\source\repos\praktika2.0\praktika2.0\bin\Debug\praktika2.0.exe.config
+C:\Users\alex-\source\repos\praktika2.0\praktika2.0\bin\Debug\praktika2.0.exe
+C:\Users\alex-\source\repos\praktika2.0\praktika2.0\bin\Debug\praktika2.0.pdb
+C:\Users\alex-\source\repos\praktika2.0\praktika2.0\obj\Debug\praktika2.0.csproj.AssemblyReference.cache
+C:\Users\alex-\source\repos\praktika2.0\praktika2.0\obj\Debug\praktika2._0.Form1.resources
+C:\Users\alex-\source\repos\praktika2.0\praktika2.0\obj\Debug\praktika2._0.Properties.Resources.resources
+C:\Users\alex-\source\repos\praktika2.0\praktika2.0\obj\Debug\praktika2.0.csproj.GenerateResource.cache
+C:\Users\alex-\source\repos\praktika2.0\praktika2.0\obj\Debug\praktika2.0.csproj.CoreCompileInputs.cache
+C:\Users\alex-\source\repos\praktika2.0\praktika2.0\obj\Debug\praktika2.0.exe
+C:\Users\alex-\source\repos\praktika2.0\praktika2.0\obj\Debug\praktika2.0.pdb
