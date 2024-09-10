@@ -13,6 +13,7 @@ namespace praktika2._0
 {
     public partial class Form1 : Form
     {
+
         public Form1()
         {
             InitializeComponent();
@@ -20,14 +21,27 @@ namespace praktika2._0
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            // Создание объектов типа Car
-            Car car1 = new Car(1, "Toyota", "Camry", 2015, "БАН202", 9, "Sedan");
-            Car car2 = new Car(2, "Ford", "Mustang", 2018, "ГДР157", 6, "Coupe");
-            Car car3 = new Car(3, "Lada", "Niva", 2013, "АДВ177", 2, "Universal");
-            Car car4 = new Car(4, "BMW", "M3", 1994, "БОК214", 30, "Sedan" );
-            Car car5 = new Car(5, "Tesla", "Cybertruck", 2023, "БДВ226", 1, "Pickup");
-            // Добавление автомобилей в DataGridView
-            dataGridView1.DataSource = new List<Vehicle> { car1, car2, car3, car4, car5 };
+            List<Car> cars = new List<Car>()
+            {
+                new Car(1, "Toyota", "Camry", 2015, "БАН202", 3, "Sedan", 1),
+                new Car(2, "Ford", "Mustang", 2018, "ГДР157", 3, "Coupe", 1),
+                new Car(3, "Lada", "Niva", 2013, "АДВ177", 3, "Universal", 1),
+                new Car(4, "BMW", "M3", 1994, "БОК214", 3, "Sedan", 1),
+                new Car(5, "Tesla", "Cybertruck", 2023, "БДВ226", 3, "Pickup", 1)
+            };
+
+            cars[0].SetMileage(25464);
+            double mileage = cars[0].GetMileage();
+            cars[1].SetMileage(46256);
+            _ = cars[1].GetMileage();
+            cars[2].SetMileage(210658);
+            _ = cars[2].GetMileage();
+            cars[3].SetMileage(268465);
+            _ = cars[3].GetMileage();
+            cars[4].SetMileage(56754);
+            _ = cars[4].GetMileage();
+
+            dataGridView1.DataSource = cars;
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)

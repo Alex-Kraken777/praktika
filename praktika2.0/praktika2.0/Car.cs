@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Remoting.Lifetime;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -9,17 +10,17 @@ namespace praktika2._0
 {
     internal class Car : Vehicle
     {
-        private int _numSeats;
-        private string _bodyType;
+        private int _id;
+        private string _make;
 
-        public int NumSeats { get => _numSeats; set => _numSeats = value; }
-        public string BodyType { get => _bodyType; set => _bodyType = value; }
-
-        public Car(int id, string make, string model, int year, string licensePlate, int numSeats, string bodyType) 
-            : base(id, make, model, year, licensePlate)
+        public int Id { get => _id; set => _id = value; }
+        public string Make { get => _make; set => _make = value; }
+        public Car(int id, string make, string model, int year, string licensePlate, int numSeats, string bodyType, double mileage) 
+            : base(make, model, year, licensePlate, numSeats, bodyType, mileage)
         {
-            _numSeats = numSeats;
-            _bodyType = bodyType;
+            _id = id;
+            _make = make;
         }
+
     }
 }
